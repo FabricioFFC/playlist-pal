@@ -17,6 +17,12 @@ To validate its output run the unit tests using RSpec:
 $ rspec specs/
 ```
 
+It's also possible to Rubocop for static analysis:
+
+```sh
+$ rubocop
+```
+
 ## How to scale this app
 
 This app was built in just x hours and y minutes, so there are plenty of room for improvements, particularly for handling very large files.
