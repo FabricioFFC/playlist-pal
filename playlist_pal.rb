@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
-require 'playlist_updater'
+require_relative './lib/playlist_updater'
 
 def print_result(result)
   if result.success?
