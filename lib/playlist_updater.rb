@@ -41,16 +41,14 @@ class PlaylistUpdater
   end
 
   def validate_changes_file
-    errors = []
-
     if changes_without_operations?
-      errors << 'Changes file must at least have one of the following keys: `add_song_to_playst`, '\
+      raise 'Change file has error: it must have at least one of the following keys: `add_song_to_playst`, '\
                 '`add_playlist_to_user`, `remove_playlist`'
     end
 
     return unless change_file_add_playlist_to_user_is_invalid?(changes['add_playlist_to_user'])
 
-    errors << 'Changes file must have at least one song id in `add_playlist_to_user`'
+    raise 'Change file has error: it must have at least one song id in `add_playlist_to_user`'
   end
 
   def changes_without_operations?

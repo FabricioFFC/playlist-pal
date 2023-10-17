@@ -26,7 +26,7 @@ $ rubocop
 
 ## How to scale this app
 
-This app was built in just 1 hour and 58 minutes, so there are plenty of room for improvements, particularly for handling very large files.
+This app was built in just 1 hour and 59 minutes, so there are plenty of room for improvements, particularly for handling very large files.
 
 Some ideas that could to handle this scenario:
 
